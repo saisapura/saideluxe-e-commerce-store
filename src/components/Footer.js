@@ -34,6 +34,13 @@ const Wrapper = styled.footer`
   @media (min-width: 776px) {
     flex-direction: row;
   }
+
+  @media (max-width: 320px) and (max-height: 480px) {
+    h5 {
+      font-size: 0.8rem; /* Adjusted font size for smaller screens */
+    }
+  }
 `;
+
 
 export default Footer;

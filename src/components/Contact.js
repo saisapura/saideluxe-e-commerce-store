@@ -29,6 +29,7 @@ const Contact = () => {
     </Wrapper>
   );
 };
+
 const Wrapper = styled.section`
   padding: 5rem 0;
   h3 {
@@ -39,33 +40,29 @@ const Wrapper = styled.section`
     max-width: 45em;
     color: var(--clr-grey-5);
   }
-  .contact-form {
+  .section-center {
     width: 90vw;
-    max-width: 500px;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  .content {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .contact-form {
+    display: flex;
+    gap: 0; /* Remove gap between form input and button */
   }
 
-  .form-input,
-  .submit-btn {
+  .form-input {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border: 2px solid var(--clr-black);
-  }
-  .form-input {
-    border-right: none;
-    color: var(--clr-grey-3);
+    width: 100%;
     border-top-left-radius: var(--radius);
     border-bottom-left-radius: var(--radius);
   }
-  .submit-btn {
-    border-top-right-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
-  }
-  .form-input::placeholder {
-    color: var(--clr-black);
-    text-transform: capitalize;
-  }
+
   .submit-btn {
     background: var(--clr-primary-5);
     text-transform: capitalize;
@@ -73,10 +70,15 @@ const Wrapper = styled.section`
     cursor: pointer;
     transition: var(--transition);
     color: var(--clr-black);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
   }
   .submit-btn:hover {
     color: var(--clr-white);
   }
+
   @media (min-width: 992px) {
     .content {
       display: grid;

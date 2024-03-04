@@ -59,9 +59,9 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 50px;
+      width: 40px; /* Adjusted logo size for smaller screens */
       margin-left: 0;
-      margin-top: 20px;
+      margin-top: 15px; /* Adjusted margin for smaller screens */
     }
   }
   .nav-toggle {
@@ -109,6 +109,13 @@ const NavContainer = styled.nav`
       display: grid;
     }
   }
+
+  @media (max-width: 320px) and (max-height: 480px) {
+    .nav-center {
+      padding: 0 1rem; /* Adjusted padding for smaller screens */
+    }
+  }
 `;
+
 
 export default Nav;
