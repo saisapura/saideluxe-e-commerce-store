@@ -22,6 +22,8 @@ Saideluxe Store is an innovative e-commerce platform designed to provide users w
 
 To start exploring Saideluxe Store and enjoy its optimized online shopping experience, simply visit the website and begin browsing through the available products. Whether you're on a desktop or a mobile device, Saideluxe Store ensures a seamless shopping journey.
 
+## See Project [here](https://saideluxe.netlify.app/products)
+
 ## Contributing
 
 Contributions to Saideluxe Store are welcome! If you have any suggestions, bug reports, or feature requests, please feel free to submit a pull request or open an issue on GitHub.
